@@ -14,6 +14,15 @@ npm install
 npm start
 ```
 
+## Identifiants de connexion initiaux
+
+Lorsque l'application est lancée pour la première fois et qu'aucun utilisateur n'existe, un compte administrateur est créé :
+
+- **Login :** `admin`
+- **Mot de passe :** `admin123`
+
+Connectez-vous puis changez ce mot de passe avant toute utilisation réelle. Ces identifiants par défaut sont publics et ne doivent pas être utilisés comme mot de passe permanent.
+
 ## Electron en développement
 ```bash
 npm run rebuild:native
@@ -35,7 +44,7 @@ Dans Electron, la base `autoshop.sqlite` est créée dans le dossier utilisateur
 
 Au premier lancement, l'application importe une seule fois les anciennes données de `autoshop-data.json` et les clés localStorage `autoshop-data`, `autoshop-users` et `autoshop-report-periods`. Les anciens fichiers et clés ne sont pas supprimés par la migration. En dehors d'Electron, le mode navigateur conserve localStorage comme solution de développement.
 
-Le compte initial est `admin` avec le mot de passe `admin123`; il est créé uniquement lorsqu'aucun compte n'existe.
+Le compte initial est `admin` avec le mot de passe `admin123`; il est créé uniquement lorsqu'aucun compte n'existe. Changez ce mot de passe avant une utilisation réelle.
 
 
 ## Répartition des bénéfices
