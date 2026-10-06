@@ -1,0 +1,1 @@
+import {Injectable} from '@angular/core';import {DataService} from './data.service';@Injectable({providedIn:'root'})export class PurchaseService{constructor(private db:DataService){} create(x:any){return this.db.addPurchase(x)} cancel(id:string){return this.db.deletePurchase(id)}}

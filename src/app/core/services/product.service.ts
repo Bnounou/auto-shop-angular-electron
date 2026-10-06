@@ -1,0 +1,2 @@
+import {Injectable} from '@angular/core';import {DataService} from './data.service';import {Product} from '../models/models';
+@Injectable({providedIn:'root'})export class ProductService{constructor(private db:DataService){} get all(){return this.db.products()} save(p:Product){return this.db.upsertProduct(p)} remove(id:string){return this.db.deleteProduct(id)} find(q:string){const s=q.toLowerCase();return this.all.filter(p=>p.name.toLowerCase().includes(s)||p.barcode.includes(q)||p.reference?.toLowerCase().includes(s))}}

@@ -1,0 +1,21 @@
+node_modules/
+dist/
+release/
+.angular/
+out-tsc/
+
+# Local databases and legacy data exports
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+autoshop-data.json
+
+# Local secrets and certificates
+.env
+.env.*
+!.env.example
+*.pem
+*.key
